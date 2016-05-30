@@ -1,0 +1,38 @@
+\section{Appendix}
+
+Interior Nodes:
+\begin{small}
+\begin{equation}
+\begin{gathered}
+    { { T }_{ ij } }^{ p+1 }=\frac { \Delta t }{ \rho { c }_{ p }\Delta x\Delta y } \times \\ 
+    \left(\left( k \right) \left( \Delta y \right) \left( \frac { { T }_{ i-1,j }-{ T }_{ ij } }{ \Delta x }  \right) +\left( k \right) \left( \Delta y \right) \left( \frac { { T }_{ i+1,j }-{ T }_{ ij } }{ \Delta x }  \right) +\left( k \right) \left( \Delta x \right) \left( \frac { { T }_{ i,j-1 }-{ T }_{ ij } }{ \Delta x }  \right)\right) +\\
+    \left(\left( k \right) \left( \Delta x \right) \left( \frac { { T }_{ i,j+1 }-{ T }_{ ij } }{ \Delta y }  \right) +\dot { q } \left( \Delta x \right) \left( \Delta y \right) \right) +{ { T }_{ ij } }^{ p }
+\end{gathered}
+\end{equation}
+\end{small}%
+%
+%Temperature at next time step at the corner
+Bottom Nodes:
+\begin{small}
+\begin{equation}
+\begin{gathered}
+    { { T }_{ ij } }^{ p+1 }=\frac { 2\left( { q }^{ " }\Delta x+\left( k \right) \left( \frac { \Delta y }{ 2 }  \right) \left( \frac { { T }_{ i-1,j }-{ T }_{ ij } }{ \Delta x }  \right) +\left( k \right) \left( \frac { \Delta y }{ 2 }  \right) \left( \frac { { T }_{ i+1,j }-{ T }_{ ij } }{ \Delta x }  \right) +\left( k \right) \left( \Delta x \right) \left( \frac { { T }_{ i,j+1 }-{ T }_{ ij } }{ \Delta y }  \right) +\dot { q } \left( \Delta x \right) \left( \frac { \Delta y }{ 2 }  \right)  \right)  }{ \rho { c }_{ p }\Delta x\Delta y } \Delta t+{ { T }_{ ij } }^{ p }
+\end{gathered}
+\end{equation}
+\end{small}%
+%
+Bottom Left Corner:
+\begin{equation}
+\begin{gathered}
+    { { T }_{ ij } }^{ p+1 }=\frac { { q }"\frac { \Delta x }{ 2 } +q"\frac { \Delta y }{ 2 } +\left( k \right) \left( \frac { \Delta y }{ 2 }  \right) \left( \frac { { T }_{ i+1,j }-{ T }_{ ij } }{ \Delta x }  \right) +\left( k \right) \left( \frac { \Delta x }{ 2 }  \right) \left( \frac { { T }_{ i,j+1 }-{ T }_{ ij } }{ \Delta y }  \right) +\dot { q } \left( \frac { \Delta x }{ 2 }  \right) \left( \frac { \Delta y }{ 2 }  \right)  }{ \rho { c }_{ p }\frac { \Delta y }{ 2 } \frac { \Delta x }{ 2 }  } \Delta t+{ { T }_{ ij } }^{ p }
+\end{gathered}
+\end{equation}
+The left boundary layer:
+\begin{small}
+\begin{equation}
+\begin{gathered}
+    { { T }_{ ij } }^{ p+1 }=\frac { 2\Delta t\left( { q }^{ " }\Delta y+\left( k \right) \left( \Delta y \right) \left( \frac { { T }_{ i+1,j }-{ T }_{ ij } }{ \Delta x }  \right) +\left( k \right) \left( \frac { \Delta x }{ 2 }  \right) \left( \frac { { T }_{ i,j+1 }-{ T }_{ ij } }{ \Delta y }  \right) +\left( k \right) \left( \frac { \Delta x }{ 2 }  \right) \left( \frac { { T }_{ i,j-1 }-{ T }_{ ij } }{ \Delta y }  \right) +\dot { q } \left( \frac { \Delta x }{ 2 }  \right) \left( \Delta y \right)  \right)  }{ \rho { c }_{ p }\Delta y\Delta x } +{ { T }_{ ij } }^{ p }
+\end{gathered}
+\end{equation}
+\end{small}%
+%
